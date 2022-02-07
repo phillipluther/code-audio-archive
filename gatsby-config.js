@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Code.Audio`,
+    title: `Code/Audio`,
     author: {
       name: `Phillip Luther`,
       summary: ``,
@@ -105,7 +105,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'Code.Audio RSS Feed',
+            title: 'Code/Audio RSS Feed',
           },
         ],
       },
@@ -113,8 +113,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Code.Audio`,
-        short_name: `Code.Audio`,
+        name: `Code/Audio`,
+        short_name: `Code/Audio`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website

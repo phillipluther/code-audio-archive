@@ -6,6 +6,7 @@
   "author": "Phillip Luther <dev@phillipluther.com>",
   "dependencies": {
     "@fontsource/anton": "^4.5.1",
+    "classnames": "^2.3.1",
     "gatsby": "^4.6.2",
     "gatsby-plugin-feed": "^4.6.0",
     "gatsby-plugin-gatsby-cloud": "^4.6.0",
