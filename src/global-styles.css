@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply sm:text-[1.1em];
+  }
+
   a {
     @apply outline-inherit;
   }

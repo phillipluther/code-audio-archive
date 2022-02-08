@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
+import classnames from 'classnames';
 import PrimaryNav from './primary-nav';
+import Social from './social';
+import Container from './container';
 
 import Logo from '../../images/code-audio-logo-inverse.inline.svg';
 
@@ -35,10 +38,10 @@ const Layout = ({
   );
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header flex flex-wrap">
+    <div className="max-w-screen-md mx-auto" data-is-root-path={isRootPath}>
+      <header className="flex flex-wrap">
         <TitleTag>
-          <Link to="/" className="block px-4 py-2 bg-stone-700 text-stone-50 outline-offset-[-4px]">
+          <Link to="/" className="block px-6 py-2 bg-stone-800 text-stone-50 outline-offset-[-4px]">
             <span className="sr-only">{title}</span>
             <Logo className="w-auto h-10" aria-hidden />
           </Link>
@@ -52,12 +55,15 @@ const Layout = ({
       <footer>
         <h2 className="sr-only">Page Footer: Supplemental Navigation and Information</h2>
 
-        <PrimaryNav title="Footer Navigation" />
+        <section className="flex flex-wrap justify-between">
+          <PrimaryNav title="Footer Navigation" />
+          <Social title="On Social Media" />
+        </section>
 
-        <section>
+        <Container className="text-sm text-stone-600">
           <h3 className="sr-only">Copyright and Disclaimers</h3>
 
-          <p>
+          <p className="mb-4">
             All {site.siteMetadata.title} content is Copyright &copy; {new Date().getFullYear()} by{' '}
             {site.siteMetadata.author.name} unless otherwise specified.
           </p>
@@ -66,7 +72,7 @@ const Layout = ({
             {site.siteMetadata.author.name}, and do not necessarily reflect the views or opinions of
             any associated organizations or corporate entities.
           </p>
-        </section>
+        </Container>
       </footer>
     </div>
   );

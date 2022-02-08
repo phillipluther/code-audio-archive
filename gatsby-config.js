@@ -7,9 +7,28 @@ module.exports = {
     },
     description: `A blog covering music, code, and music and code`,
     siteUrl: `https://code.audio`,
-    social: {
-      twitter: `phillipluther`,
-    },
+    social: [
+      {
+        service: 'Twitter',
+        handle: '@phillipluther',
+        link: 'https://twitter.com/phillipluther',
+      },
+      {
+        service: 'YouTube',
+        handle: 'phillipluther',
+        link: 'https://youtube.com/phillipluther',
+      },
+      {
+        service: 'GitHub',
+        handle: 'phillipluther',
+        link: 'https://github.com/phillipluther',
+      },
+      {
+        service: 'Email',
+        handle: 'public@phillipluther.com',
+        link: 'mailto:public@phillipluther.com',
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-image`,

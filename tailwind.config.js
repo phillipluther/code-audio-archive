@@ -5,7 +5,16 @@ module.exports = {
       fontFamily: {
         display: 'Anton, sans-serif',
       },
+      container: {
+        padding: {
+          DEFAULT: '1rem',
+          sm: '1.5rem',
+          md: '2rem',
+          // xl: '5rem',
+          // '2xl': '6rem',
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
