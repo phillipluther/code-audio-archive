@@ -35,7 +35,10 @@ const Social = ({ title, ...props }: { title: string }) => {
 
         return (
           <li key={service}>
-            <a href={link} className="block px-6 py-2 text-2xl outline-offset-[-4px] bg-stone-100">
+            <a
+              href={link}
+              className="block px-6 py-2 text-2xl outline-offset-[-4px] bg-stone-100 hover:bg-stone-800 hover:text-stone-100"
+            >
               {Icon && <Icon className="h-10" />}
               <span className="sr-only">{`${handle} via ${service}`}</span>
             </a>

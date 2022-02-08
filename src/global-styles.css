@@ -10,4 +10,8 @@
   a {
     @apply outline-inherit;
   }
+
+  svg path {
+    @apply fill-inherit;
+  }
 }

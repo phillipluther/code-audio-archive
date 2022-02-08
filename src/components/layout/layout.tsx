@@ -41,9 +41,12 @@ const Layout = ({
     <div className="max-w-screen-md mx-auto" data-is-root-path={isRootPath}>
       <header className="flex flex-wrap">
         <TitleTag>
-          <Link to="/" className="block px-6 py-2 bg-stone-800 text-stone-50 outline-offset-[-4px]">
+          <Link
+            to="/"
+            className="group block px-6 py-2 bg-stone-800 text-stone-50 outline-offset-[-4px] hover:bg-stone-100"
+          >
             <span className="sr-only">{title}</span>
-            <Logo className="w-auto h-10" aria-hidden />
+            <Logo className="w-auto h-10 fill-stone-100 group-hover:fill-stone-800" aria-hidden />
           </Link>
         </TitleTag>
 
@@ -60,7 +63,7 @@ const Layout = ({
           <Social title="On Social Media" />
         </section>
 
-        <Container className="text-sm text-stone-600">
+        <Container className="text-sm text-stone-600 mt-4">
           <h3 className="sr-only">Copyright and Disclaimers</h3>
 
           <p className="mb-4">
