@@ -9,13 +9,11 @@ import Logo from '../../images/code-audio-logo-inverse.inline.svg';
 
 const Layout = ({
   location,
-  title,
   children,
 }: {
   location: {
     pathname?: string;
   };
-  title: string;
   children: React.ReactNode;
 }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
@@ -45,7 +43,7 @@ const Layout = ({
             to="/"
             className="group block px-6 py-2 bg-stone-800 text-stone-50 outline-offset-[-4px] hover:bg-stone-100"
           >
-            <span className="sr-only">{title}</span>
+            <span className="sr-only">{site.siteMetadata.title}</span>
             <Logo className="w-auto h-10 fill-stone-100 group-hover:fill-stone-800" aria-hidden />
           </Link>
         </TitleTag>
