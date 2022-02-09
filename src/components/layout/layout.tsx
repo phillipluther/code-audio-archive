@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
-import classnames from 'classnames';
 import PrimaryNav from './primary-nav';
 import Social from './social';
 import Container from './container';
@@ -51,7 +50,7 @@ const Layout = ({
         <PrimaryNav showHome={false} />
       </header>
 
-      <main>{children}</main>
+      <Container as="main">{children}</Container>
 
       <footer>
         <h2 className="sr-only">Page Footer: Supplemental Navigation and Information</h2>
