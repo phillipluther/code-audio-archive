@@ -1,5 +1,5 @@
 ---
-title: My Second Post!
+title: My Second Post! Let's Do It With a Reasonable Title
 date: '2015-05-06T23:46:37.121Z'
 cover: 'marius-masalar-rPOmLGwai2w-unsplash.jpg'
 ---

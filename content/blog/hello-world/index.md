@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: Hello World! Glad to Hear You're Well
 date: '2015-05-01T22:12:03.284Z'
 description: 'Hello World'
 cover: './salty_egg.jpg'
