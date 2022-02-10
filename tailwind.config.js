@@ -18,6 +18,32 @@ module.exports = {
           md: '2rem',
         },
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            h1: {
+              fontWeight: 'inherit',
+            },
+            h2: {
+              fontWeight: 'inherit',
+            },
+            h3: {
+              fontWeight: 'inherit',
+            },
+            h4: {
+              fontWeight: 'inherit',
+            },
+            a: {
+              color: theme('colors.emerald.600'),
+              textDecoration: 'underline',
+              '&:hover': {
+                color: theme('colors.emerald.800'),
+                textDecoration: 'none',
+              },
+            },
+          },
+        },
+      }),
     },
   },
   plugins: [require('@tailwindcss/typography')],

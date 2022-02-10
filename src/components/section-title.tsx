@@ -1,13 +1,36 @@
 import * as React from 'react';
+import classnames from 'classnames';
 
 const SectionTitle = ({
   as: Tag = 'h2',
   children,
+  flush = false,
 }: {
   as?: React.ElementType;
   children: React.ReactNode;
+  flush?: boolean;
 }) => (
-  <Tag className="relative text-base text-stone-500 font-display pl-6 -ml-6 mb-4 after:block after:w-4 after:bg-stone-400 after:h-full after:absolute after:top-0 after:left-0">
+  <Tag
+    className={classnames(
+      'relative',
+      'text-base',
+      'text-stone-500',
+      'font-display',
+      'pl-6',
+      '-ml-6',
+      'mb-6',
+      'after:block',
+      'after:w-4',
+      'after:bg-stone-400',
+      'after:h-full',
+      'after:absolute',
+      'after:top-0',
+      'after:left-0',
+      {
+        'mt-6': flush === false,
+      }
+    )}
+  >
     {children}
   </Tag>
 );

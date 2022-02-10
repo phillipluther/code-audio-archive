@@ -25,9 +25,7 @@ const Layout = ({
         site {
           siteMetadata {
             title
-            author {
-              name
-            }
+            author
           }
         }
       }
@@ -65,12 +63,12 @@ const Layout = ({
 
           <p className="mb-4">
             All {site.siteMetadata.title} content is Copyright &copy; {new Date().getFullYear()} by{' '}
-            {site.siteMetadata.author.name} unless otherwise specified.
+            {site.siteMetadata.author} unless otherwise specified.
           </p>
           <p>
             The opinions expressed on {site.siteMetadata.title} belong to me,{' '}
-            {site.siteMetadata.author.name}, and do not necessarily reflect the views or opinions of
-            any associated organizations or corporate entities.
+            {site.siteMetadata.author}, and do not necessarily reflect the views or opinions of any
+            associated organizations or corporate entities.
           </p>
         </Container>
       </footer>

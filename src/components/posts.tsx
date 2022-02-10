@@ -71,9 +71,18 @@ const Posts = ({
                   __html: post.frontmatter.description || post.excerpt,
                 }}
                 itemProp="description"
-                className={classnames('leading-7 xs:pr-6', blockClasses)}
+                className={classnames('leading-7 xs:pr-6 mb-4 sm:mb-5', blockClasses)}
               />
             </section>
+
+            <footer>
+              <Link
+                to={post.fields.slug}
+                className="font-display text-emerald-600 invisible hover:text-emerald-800 sm:visible"
+              >
+                Read More &raquo;
+              </Link>
+            </footer>
           </article>
         </li>
       );

@@ -13,7 +13,9 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location}>
       <Seo title="All Blog Posts" />
 
-      <SectionTitle as="h1">All Blog Posts</SectionTitle>
+      <SectionTitle as="h1" flush>
+        All Blog Posts
+      </SectionTitle>
 
       <PostList posts={posts} headingLevel="h2" />
     </Layout>
