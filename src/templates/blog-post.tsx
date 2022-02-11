@@ -5,6 +5,7 @@ import classnames from 'classnames';
 import Bio from '../components/bio';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
+import PageTitle from '../components/page-title';
 
 const prevNextIconClasses =
   'block w-8 h-8 leading-7 text-center text-white font-bold bg-emerald-600 rounded-sm';
@@ -22,12 +23,7 @@ const BlogPostTemplate = ({ data, location }) => {
 
       <article itemScope itemType="http://schema.org/Article">
         <header>
-          <h1
-            itemProp="headline"
-            className="font-display text-4xl xs:text-5xl sm:text-6xl md:text-7xl !leading-tight mb-5 md:mb-6"
-          >
-            {post.frontmatter.title}
-          </h1>
+          <PageTitle itemProp="headline">{post.frontmatter.title}</PageTitle>
           <p className="mb-5">Published {post.frontmatter.date}</p>
           <p className="mb-5 prose-lg xs:prose-xl text-stone-600 italic">
             {post.frontmatter.description || post.excerpt}

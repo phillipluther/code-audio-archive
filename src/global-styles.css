@@ -15,6 +15,14 @@
     @apply outline-inherit;
   }
 
+  p a {
+    @apply text-emerald-600;
+  }
+
+  p a:hover {
+    @apply text-emerald-800;
+  }
+
   svg path {
     @apply fill-inherit;
   }
