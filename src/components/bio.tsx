@@ -36,13 +36,19 @@ const Bio = () => {
 
       <p>My name is Phillip Luther. I go by Phil.</p>
       <p>
-        I'm a <a href="#life_long_clarification">life-long</a>
-        <sup>*</sup> software engineer and classically trained musician. I'm also the sole author
-        behind posts on this blog, exploring music, code, and music and code.
+        I'm a life-long<sup>*</sup> software engineer and classically trained musician. I'm also the
+        sole author behind posts on this blog, exploring music, code, and music and code.
       </p>
       <p>
         Current areas of interest include the web audio API, blockchain technology, and YouTube
         guitar channels. Ask me about 'em!
+      </p>
+      <p className="text-sm text-stone-700 italic" id="life_long_clarification">
+        <span>*</span>{' '}
+        <span>
+          I'm just over 40. Accounting for childhood and teenage buffoonery I'll translate "life
+          long" to 25'ish years. For clarity.
+        </span>
       </p>
     </section>
   );

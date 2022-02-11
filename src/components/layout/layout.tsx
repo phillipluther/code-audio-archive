@@ -38,10 +38,10 @@ const Layout = ({
         <TitleTag>
           <Link
             to="/"
-            className="group block px-6 py-2 bg-stone-800 text-stone-50 outline-offset-[-4px] hover:bg-stone-100"
+            className="group block px-6 py-2 bg-stone-700 text-stone-50 outline-offset-[-4px] hover:bg-stone-100"
           >
             <span className="sr-only">{site.siteMetadata.title}</span>
-            <Logo className="w-auto h-10 fill-stone-100 group-hover:fill-stone-800" aria-hidden />
+            <Logo className="w-auto h-10 fill-stone-100 group-hover:fill-stone-700" aria-hidden />
           </Link>
         </TitleTag>
 

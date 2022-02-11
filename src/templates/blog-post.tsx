@@ -8,7 +8,7 @@ import Seo from '../components/seo';
 import PageTitle from '../components/page-title';
 
 const prevNextIconClasses =
-  'block w-8 h-8 leading-7 text-center text-white font-bold bg-emerald-600 rounded-sm';
+  'block w-8 h-8 leading-7 text-center text-stone-50 font-bold bg-emerald-600 rounded-sm group-hover:bg-emerald-800';
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark;
@@ -55,14 +55,12 @@ const BlogPostTemplate = ({ data, location }) => {
         <ul className="sm:flex justify-between">
           <li className="sm:mr-3">
             {previous && (
-              <Link
-                className="flex text-emerald-700 p-2 -ml-2"
-                to={previous.fields.slug}
-                rel="prev"
-              >
+              <Link className="group flex p-2 -ml-2" to={previous.fields.slug} rel="prev">
                 <span className={classnames(prevNextIconClasses, 'mr-4')}>&laquo;</span>
                 <span className="text-sm text-stone-800 flex-1">
-                  <span className="block font-display">Previous Post</span>
+                  <span className="block font-display group-hover:text-emerald-900 group-hover:underline">
+                    Previous Post
+                  </span>
                   {previous.frontmatter.title}
                 </span>
               </Link>
@@ -71,7 +69,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <li className="sm:ml-3">
             {next && (
               <Link
-                className="flex text-emerald-700 p-2 -ml-2 sm:ml-0 sm:-mr-2"
+                className="group flex p-2 -ml-2 sm:ml-0 sm:-mr-2"
                 to={next.fields.slug}
                 rel="next"
               >
@@ -87,7 +85,9 @@ const BlogPostTemplate = ({ data, location }) => {
                   &raquo;
                 </span>
                 <span className="text-sm text-stone-800 shrink flex-1 sm:order-1 sm:text-right">
-                  <span className="block font-display">Next Post</span>
+                  <span className="block font-display group-hover:text-emerald-900 group-hover:underline">
+                    Next Post
+                  </span>
                   {next.frontmatter.title}
                 </span>
               </Link>
