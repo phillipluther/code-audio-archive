@@ -33,6 +33,14 @@ module.exports = {
             h4: {
               fontWeight: 'inherit',
             },
+            h5: {
+              fontWeight: 'inherit',
+              fontFamily: 'Anton, sans-serif',
+            },
+            h6: {
+              fontWeight: 'inherit',
+              fontFamily: 'Anton, sans-serif',
+            },
             a: {
               color: theme('colors.emerald.600'),
               textDecoration: 'underline',

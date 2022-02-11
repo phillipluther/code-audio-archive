@@ -36,7 +36,7 @@ const Posts = ({
             <header className="flex flex-wrap">
               <HeadingTag
                 className={classnames(
-                  'font-display text-2xl xs:text-3xl mb-4 sm:mb-5 w-full order-2 xs:-mt-24 xs:pt-6',
+                  'font-display text-2xl xs:text-3xl !leading-tight mb-4 sm:mb-5 w-full order-2 xs:-mt-24 xs:pt-6',
                   blockClasses
                 )}
               >

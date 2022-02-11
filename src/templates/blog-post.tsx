@@ -1,9 +1,13 @@
 import * as React from 'react';
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import classnames from 'classnames';
 import Bio from '../components/bio';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
+
+const prevNextIconClasses =
+  'block w-8 h-8 leading-7 text-center text-white font-bold bg-emerald-600 rounded-sm';
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark;
@@ -51,27 +55,45 @@ const BlogPostTemplate = ({ data, location }) => {
         </footer>
       </article>
 
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
+      <nav>
+        <ul className="sm:flex justify-between">
+          <li className="sm:mr-3">
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+              <Link
+                className="flex text-emerald-700 p-2 -ml-2"
+                to={previous.fields.slug}
+                rel="prev"
+              >
+                <span className={classnames(prevNextIconClasses, 'mr-4')}>&laquo;</span>
+                <span className="text-sm text-stone-800 flex-1">
+                  <span className="block font-display">Previous Post</span>
+                  {previous.frontmatter.title}
+                </span>
               </Link>
             )}
           </li>
-          <li>
+          <li className="sm:ml-3">
             {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+              <Link
+                className="flex text-emerald-700 p-2 -ml-2 sm:ml-0 sm:-mr-2"
+                to={next.fields.slug}
+                rel="next"
+              >
+                <span
+                  className={classnames(
+                    prevNextIconClasses,
+                    'mr-4',
+                    'sm:order-2',
+                    'sm:ml-4',
+                    'sm:mr-0'
+                  )}
+                >
+                  &raquo;
+                </span>
+                <span className="text-sm text-stone-800 shrink flex-1 sm:order-1 sm:text-right">
+                  <span className="block font-display">Next Post</span>
+                  {next.frontmatter.title}
+                </span>
               </Link>
             )}
           </li>
