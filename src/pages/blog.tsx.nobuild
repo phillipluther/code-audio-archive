@@ -24,7 +24,7 @@ const BlogIndex = ({ data, location }) => {
 
 export default BlogIndex;
 
-export const pageQuery = graphql`
+export const query = graphql`
   query {
     site {
       siteMetadata {

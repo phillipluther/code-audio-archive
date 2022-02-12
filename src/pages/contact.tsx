@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import * as React from 'react';
 
 import Layout from '../components/layout';
@@ -27,7 +27,9 @@ const ContactPage = ({ data, location }) => {
         Questions, comments, ideas, or feedback for the blog? Found something wonky with the site
         itself? Hate the fonts?
       </p>
-      <p className="mb-5 leading-7">Let me (Phil) know!</p>
+      <p className="mb-5 leading-7">
+        Let me (<Link to="/about">Phil</Link>) know!
+      </p>
       <p className="mb-5 leading-7">
         <a href={contactLinks.Email}>Email</a> is the best way to get in touch because I'm
         old-fashioned like that. I'm infrequently active on{' '}

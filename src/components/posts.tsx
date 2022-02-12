@@ -78,7 +78,7 @@ const Posts = ({
             <footer>
               <Link
                 to={post.fields.slug}
-                className="font-display text-emerald-600 invisible hover:text-emerald-800 sm:visible"
+                className="font-display text-emerald-600 hidden hover:text-emerald-800 sm:block"
               >
                 Read More &raquo;
               </Link>

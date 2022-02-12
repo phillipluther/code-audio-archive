@@ -8,7 +8,9 @@ const Bio = () => {
       site {
         siteMetadata {
           title
-          author
+          author {
+            name
+          }
           social {
             service
             handle
@@ -31,7 +33,7 @@ const Bio = () => {
         src="../images/portrait-avatar.png"
         width={120}
         quality={70}
-        alt={`${author}, the sole contributor to posts on ${data.site.siteMetadata?.title}`}
+        alt={`${author.name}, the sole contributor to posts on ${data.site.siteMetadata?.title}`}
       />
 
       <p>My name is Phillip Luther. I go by Phil.</p>

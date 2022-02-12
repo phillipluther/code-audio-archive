@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 import Seo from '../components/seo';
 import PageTitle from '../components/page-title';
 import SectionTitle from '../components/section-title';
-import Posts from '../components/posts';
+import PostList from '../components/posts';
 
 const BlogIndex = ({ data, location }) => {
   const { title, description } = data.site.siteMetadata;
@@ -18,7 +18,10 @@ const BlogIndex = ({ data, location }) => {
         {title} is {description.toLowerCase()}.
       </PageTitle>
 
-      <SectionTitle as="h3">Recent Posts</SectionTitle>
+      <section>
+        <SectionTitle as="h3">Recent Blog Posts</SectionTitle>
+        <PostList posts={data.allMarkdownRemark.nodes} headingLevel="h4" />
+      </section>
     </Layout>
   );
 };
@@ -31,6 +34,24 @@ export const query = graphql`
       siteMetadata {
         title
         description
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          cover {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+          date(formatString: "MMMM, DD YYYY")
+          description
+          title
+        }
       }
     }
   }

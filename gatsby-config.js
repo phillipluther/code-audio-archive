@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Code/Audio`,
-    author: 'Phillip Luther',
+    author: {
+      name: 'Phillip Luther',
+      email: 'dev@phillipluther.com',
+    },
     description: `A blog covering music, code, and music and code`,
     siteUrl: `https://code.audio`,
     social: [
