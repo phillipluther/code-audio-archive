@@ -39,17 +39,22 @@ const Bio = () => {
       <p>My name is Phillip Luther. I go by Phil.</p>
       <p>
         I'm a life-long<sup>*</sup> software engineer and classically trained musician. I'm also the
-        sole author behind posts on this blog, exploring music, code, and music and code.
+        creator of this blog and sole author creating its content.
       </p>
       <p>
-        Current areas of interest include the web audio API, blockchain technology, and YouTube
-        guitar channels. Ask me about 'em!
+        Blog-relevant areas of current interest include the web audio API, using blockchain
+        technology for non-crypt and non-NFT purposes, and YouTube guitar channels.
+      </p>
+      <p>
+        Blog-irrelevant areas of current interest include sci-fi/fantasy across most mediums,
+        micro-optimizing my living space, and battling to reconcile my love of strong drink with a
+        desire to live a yogic lifestyle.
       </p>
       <p className="text-sm text-stone-700 italic" id="life_long_clarification">
         <span>*</span>{' '}
         <span>
           I'm just over 40. Accounting for childhood and teenage buffoonery I'll translate "life
-          long" to 25'ish years. For clarity.
+          long" to 25'ish years. Throwing that out for clarity.
         </span>
       </p>
     </section>
