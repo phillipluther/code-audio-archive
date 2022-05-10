@@ -8,7 +8,7 @@ const commonClasses =
 const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => (
   <Link
     to={to}
-    className="block px-6 py-2 leading-10 outline-offset-[-4px] hover:underline hover:decoration-solid decoration-2 bg-slate-800 hover:bg-amber-100 hover:text-slate-800"
+    className="block px-6 py-2 leading-10 outline-offset-[-4px] hover:underline hover:decoration-solid decoration-2 bg-stone-700 hover:bg-stone-100 hover:text-stone-700"
   >
     {children}
   </Link>
@@ -25,7 +25,7 @@ const PrimaryNav = ({
   title?: string;
 }) => (
   <nav aria-label={title} className={className} {...props}>
-    <ul className="flex flex-wrap font-display text-amber-50">
+    <ul className="flex flex-wrap font-display text-stone-50">
       {showHome && (
         <li>
           <NavLink to="/">Home</NavLink>

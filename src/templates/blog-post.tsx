@@ -8,7 +8,7 @@ import Seo from '../components/seo';
 import PageTitle from '../components/page-title';
 
 const prevNextIconClasses =
-  'block w-8 h-8 leading-7 text-center text-slate-50 font-bold bg-emerald-600 rounded-sm group-hover:bg-emerald-800';
+  'block w-8 h-8 leading-7 text-center text-stone-50 font-bold bg-emerald-600 rounded-sm group-hover:bg-emerald-800';
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark;
@@ -25,7 +25,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <header>
           <PageTitle itemProp="headline">{post.frontmatter.title}</PageTitle>
           <p className="mb-5">Published {post.frontmatter.date}</p>
-          <p className="mb-5 prose-lg xs:prose-xl text-slate-600 italic">
+          <p className="mb-5 prose-lg xs:prose-xl text-stone-600 italic">
             {post.frontmatter.description || post.excerpt}
           </p>
 
@@ -57,7 +57,7 @@ const BlogPostTemplate = ({ data, location }) => {
             {previous && (
               <Link className="group flex p-2 -ml-2" to={previous.fields.slug} rel="prev">
                 <span className={classnames(prevNextIconClasses, 'mr-4')}>&laquo;</span>
-                <span className="text-sm text-slate-800 flex-1">
+                <span className="text-sm text-stone-800 flex-1">
                   <span className="block font-display group-hover:text-emerald-900 group-hover:underline">
                     Previous Post
                   </span>
@@ -84,7 +84,7 @@ const BlogPostTemplate = ({ data, location }) => {
                 >
                   &raquo;
                 </span>
-                <span className="text-sm text-slate-800 shrink flex-1 sm:order-1 sm:text-right">
+                <span className="text-sm text-stone-800 shrink flex-1 sm:order-1 sm:text-right">
                   <span className="block font-display group-hover:text-emerald-900 group-hover:underline">
                     Next Post
                   </span>

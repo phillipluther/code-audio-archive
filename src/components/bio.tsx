@@ -45,7 +45,7 @@ const Bio = () => {
         Current areas of interest include the web audio API, blockchain technology, and YouTube
         guitar channels. Ask me about 'em!
       </p>
-      <p className="text-sm text-slate-800 italic" id="life_long_clarification">
+      <p className="text-sm text-stone-700 italic" id="life_long_clarification">
         <span>*</span>{' '}
         <span>
           I'm just over 40. Accounting for childhood and teenage buffoonery I'll translate "life

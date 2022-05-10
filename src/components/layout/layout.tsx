@@ -4,7 +4,7 @@ import PrimaryNav from './primary-nav';
 import Social from './social';
 import Container from './container';
 
-import Logo from '../../images/principled-engineer-logo.inline.svg';
+import Logo from '../../images/code-audio-logo-inverse.inline.svg';
 
 const Layout = ({
   location,
@@ -40,10 +40,10 @@ const Layout = ({
         <TitleTag>
           <Link
             to="/"
-            className="group block px-6 py-2 bg-slate-800 text-slate-50 outline-offset-[-4px] hover:bg-amber-100"
+            className="group block px-6 py-2 bg-stone-700 text-stone-50 outline-offset-[-4px] hover:bg-stone-100"
           >
             <span className="sr-only">{site.siteMetadata.title}</span>
-            <Logo className="w-auto h-16 fill-amber-50 group-hover:fill-slate-800" aria-hidden />
+            <Logo className="w-auto h-10 fill-stone-100 group-hover:fill-stone-700" aria-hidden />
           </Link>
         </TitleTag>
 
@@ -60,7 +60,7 @@ const Layout = ({
           <Social title="On Social Media" />
         </section>
 
-        <Container className="text-sm text-slate-600 mt-4">
+        <Container className="text-sm text-stone-600 mt-4">
           <h3 className="sr-only">Copyright and Disclaimers</h3>
 
           <p className="mb-4">

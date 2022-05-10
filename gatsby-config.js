@@ -35,7 +35,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content`,
+        path: `${__dirname}/content/blog`,
         name: `blog`,
       },
     },
@@ -140,7 +140,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/principled-engineer-favicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/code-audio-favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
