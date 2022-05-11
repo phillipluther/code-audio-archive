@@ -19,6 +19,7 @@ const SectionTitle = ({
       'pl-6',
       '-ml-6',
       'mb-6',
+      'mt-8',
       'after:block',
       'after:w-4',
       'after:bg-stone-700',

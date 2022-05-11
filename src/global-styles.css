@@ -15,12 +15,14 @@
     @apply outline-inherit;
   }
 
+  li > a,
   p a {
     @apply text-emerald-600;
     @apply underline;
     @apply decoration-1;
   }
 
+  li > a:hover,
   p a:hover {
     @apply text-emerald-800;
     @apply no-underline;

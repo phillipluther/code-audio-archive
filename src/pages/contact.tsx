@@ -23,6 +23,18 @@ const ContactPage = ({ data, location }) => {
       <Seo title={title} description={description} />
 
       <PageTitle>{title}</PageTitle>
+
+      <ul className="list-disc mb-6 mt-6 pl-6">
+        <li className="mb-2">
+          <a href={contactLinks.Twitter} className="">
+            @codeaudio1 on Twitter
+          </a>
+        </li>
+        <li className="mb-2">
+          <a href={contactLinks.Email}>hi@code.audio by Email</a>
+        </li>
+      </ul>
+
       <p className="mb-5 leading-7">
         Questions, comments, ideas, or feedback for the blog? Found something wonky with the site
         itself? Hate the fonts?
@@ -37,8 +49,8 @@ const ContactPage = ({ data, location }) => {
         at-mention also works.
       </p>
       <p className="mb-5 leading-7">
-        If you do email me, rest assured your email will never ever be used for anything other than
-        writing you back.
+        If you do email me, or me on behalf of the blog, rest assured your email will never ever be
+        used for anything other than writing you back.
       </p>
     </Layout>
   );

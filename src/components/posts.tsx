@@ -40,7 +40,7 @@ const Posts = ({
                   blockClasses
                 )}
               >
-                <Link to={post.fields.slug} itemProp="url">
+                <Link to={post.fields.slug} itemProp="url" className="text-stone-800 no-underline">
                   <span itemProp="headline">{title}</span>
                 </Link>
               </HeadingTag>

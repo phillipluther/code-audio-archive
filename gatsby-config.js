@@ -10,13 +10,8 @@ module.exports = {
     social: [
       {
         service: 'Twitter',
-        handle: '@phillipluther',
-        link: 'https://twitter.com/phillipluther',
-      },
-      {
-        service: 'YouTube',
-        handle: 'phillipluther',
-        link: 'https://youtube.com/phillipluther',
+        handle: '@codeaudio1',
+        link: 'https://twitter.com/codeaudio1',
       },
       {
         service: 'GitHub',
@@ -25,8 +20,8 @@ module.exports = {
       },
       {
         service: 'Email',
-        handle: 'public@phillipluther.com',
-        link: 'mailto:public@phillipluther.com',
+        handle: 'hi@code.audio',
+        link: 'mailto:hi@code.audio',
       },
     ],
   },
