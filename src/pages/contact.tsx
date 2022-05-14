@@ -26,12 +26,14 @@ const ContactPage = ({ data, location }) => {
 
       <ul className="list-disc mb-6 mt-6 pl-6">
         <li className="mb-2">
-          <a href={contactLinks.Twitter} className="">
+          <a href={contactLinks.Twitter} className="text-emerald-600">
             @codeaudio1 on Twitter
           </a>
         </li>
         <li className="mb-2">
-          <a href={contactLinks.Email}>hi@code.audio by Email</a>
+          <a href={contactLinks.Email} className="text-emerald-600">
+            hi@code.audio by Email
+          </a>
         </li>
       </ul>
 

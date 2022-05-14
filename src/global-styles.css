@@ -15,7 +15,6 @@
     @apply outline-inherit;
   }
 
-  li > a,
   p a {
     @apply text-emerald-600;
     @apply underline;
