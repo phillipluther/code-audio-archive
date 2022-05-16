@@ -22,7 +22,7 @@ const BlogPostTemplate = ({ data, location }) => {
       />
 
       <article itemScope itemType="http://schema.org/Article">
-        <header>
+        <header className="mb-8">
           <PageTitle itemProp="headline">{post.frontmatter.title}</PageTitle>
           <p className="mb-5">Published {post.frontmatter.date}</p>
           <p className="mb-5 prose-lg xs:prose-xl text-stone-600 italic">
@@ -34,7 +34,7 @@ const BlogPostTemplate = ({ data, location }) => {
               image={getImage(post.frontmatter.cover)}
               alt=""
               aria-hidden
-              className="aspect-video -z-10 -ml-6 -mr-6 mb-4 sm:mb-5"
+              className="aspect-video -z-10 -ml-6 -mr-6"
             />
           )}
         </header>

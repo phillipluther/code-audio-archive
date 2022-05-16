@@ -7,9 +7,10 @@ const PageTitle = ({
   children,
   ...props
 }: {
-  as?: React.ElementType;
+  as?: keyof JSX.IntrinsicElements;
   className?: string;
   children: React.ReactNode;
+  [key: string]: any;
 }) => (
   <Tag
     className={classnames(

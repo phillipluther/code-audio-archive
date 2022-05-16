@@ -15,6 +15,7 @@ const Layout = ({
   };
   children: React.ReactNode;
 }) => {
+  // @ts-ignore ... TODO: shouldn't this come from @types/node?
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location.pathname === rootPath;
   const TitleTag = isRootPath ? 'h1' : 'p';
