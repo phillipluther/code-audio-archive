@@ -42,8 +42,8 @@ const Bio = () => {
         creator of and sole contributor to {data.site.siteMetadata?.title}, this very blog.
       </p>
       <p>
-        Blog-relevant areas of current interest include the web audio API, blockchain technology in
-        non-crypto/-NFT spaces, and YouTube guitar channels.
+        Blog-relevant areas of current interest include the web audio API, non-crypto blockchain
+        technology, and YouTube guitar channels.
       </p>
       <p>
         Blog-irrelevant areas of current interest include sci-fi/fantasy across most mediums,
