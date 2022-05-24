@@ -7,6 +7,7 @@ const Seo = ({
   lang = 'en',
   meta = [],
   title,
+  socialImage,
 }: {
   description?: string;
   lang?: string;
@@ -23,6 +24,7 @@ const Seo = ({
       }
   )[];
   title?: string;
+  socialImage?: string;
 }) => {
   const { site } = useStaticQuery(
     graphql`
@@ -70,6 +72,10 @@ const Seo = ({
         {
           property: 'og:type',
           content: 'website',
+        },
+        {
+          property: 'og:image',
+          content: socialImage || 'https://code.audio/images/code-audio-social-card.png',
         },
         {
           name: 'twitter:card',

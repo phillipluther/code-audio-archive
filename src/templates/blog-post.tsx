@@ -13,12 +13,14 @@ const prevNextIconClasses =
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark;
   const { previous, next } = data;
+  const cover = post.frontmatter.cover ? getImage(post.frontmatter.cover) : null;
 
   return (
     <Layout location={location}>
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        socialImage={cover?.images?.fallback?.src}
       />
 
       <article itemScope itemType="http://schema.org/Article">
@@ -29,9 +31,9 @@ const BlogPostTemplate = ({ data, location }) => {
             {post.frontmatter.description || post.excerpt}
           </p>
 
-          {post.frontmatter.cover && (
+          {cover && (
             <GatsbyImage
-              image={getImage(post.frontmatter.cover)}
+              image={cover}
               alt=""
               aria-hidden
               className="aspect-video -z-10 -ml-6 -mr-6"
