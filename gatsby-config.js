@@ -32,6 +32,7 @@ module.exports = {
       options: {
         path: `${__dirname}/content`,
         name: `blog`,
+        ignore: ['**/_stubs'],
       },
     },
     {
